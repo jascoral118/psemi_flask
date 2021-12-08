@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ISL Project</title>
+      <link rel="stylesheet" href="/static/css/style.css">
   </head>
   <body>
     {% with messages = get_flashed_messages() %}
@@ -13,11 +14,12 @@
             {% endfor %}
         {% endif %}
     {% endwith %}
+
+    <h1>Nickname:{{send_personal_info.get('nickname')}}</h1><h2>Age:{{send_personal_info.get('age')}}</h2><h1>address:{{send_personal_info.get('address')}}</h1>
     <ol>
         {% for k in send_num_list %}
             <li>{{k}}</li>
         {% endfor %}
     </ol>
-    <h1>Nickname:{{send_personal_info.get('nickname')}}</h1><h2>Age:{{send_personal_info.get('age')}}</h2><h1>address:{{send_personal_info.get('address')}}</h1>
   </body>
 </html>
