@@ -1,0 +1,19 @@
+body{
+    font-family: "Meiryo UI";
+    font-size: 24px;
+    background-color: lightsteelblue;
+}
+h1 {
+    background-color: coral;
+}
+h2{
+    background-color: yellowgreen;
+}
+h3{
+    background-color: yellow;
+}
+ol{
+    font-weight: bold;
+    color: olivedrab;
+}
+
